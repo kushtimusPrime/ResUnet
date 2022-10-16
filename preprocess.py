@@ -71,8 +71,8 @@ if __name__ == '__main__':
 
     train_dir = args.train
     valid_dir = args.valid
-    X_points = start_points(hp.IMAGE_SIZE, hp.CROP_SIZE, 0.14)
-    Y_points = start_points(hp.IMAGE_SIZE, hp.CROP_SIZE, 0.14)
+    X_points = start_points(1920, hp.CROP_SIZE, 0.14)
+    Y_points = start_points(1080, 1024, 0.14)
 
     ## Training data
     train_img_dir = os.path.join(train_dir, "input")
